@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+{%  load static %}
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Kako chat room-Frequently used words </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{%static 'vendor/bootstrap/css/bootstrap.min.css'%}?v=1.0" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{%static 'vendor/fontawesome-free/css/all.min.css'%}?v=1.0" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS -->
+  <link href="{%static 'vendor/magnific-popup/magnific-popup.css'%}?v=1.0" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="{%static 'css/freelancer.min.css'%}?v=1.0" rel="stylesheet">
+
+  <link href="{%static 'css/styles.css'%}?v=1.0" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">WORDCOUNT</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" id=button type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Input Form</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead bg-primary text-white text-center" id="masthead">
+    <div class="container">
+      <img class="img-fluid mb-5 d-block mx-auto" src="{%static 'img/kakao.png'%}" alt="">
+      <head>
+        <link href="{%static 'css/style.css'%}?v=1.0" rel="stylesheet">
+    </head>
+    
+    <body id="result_board">
+    <h3 class = "result_title">당신이 자주 쓰는 단어를 확인해 보세요!</h3>
+    
+    <a href="{%url 'index'%}" class = "result_title">다시해보기</a>
+    <br>
+    <h4 class = "result_title">[입력한 텍스트]</h4> 
+    
+    <h5 class = "result_title">{{full}}</h5>
+    
+    
+    
+    <h4 class = "result_title">[자주 쓴 단어 순으로]</h4>
+    
+    
+    <h5 class = "result_title">
+    {%for word, howmany in dictonary%}
+    {{word}}:{{howmany}}
+    <br>
+    {%endfor%}
+    </h5>
+    <!--'단어' --'단어가 나온 수'-->
+    </body>
+    </div>
+  </header>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0" style="font-family: 'LotteMartHappy'">한양대학교
+            <br>ERICA CAMPUS</p>
+        </div>
+        <div class="col-md-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4"style="font-family: 'LotteMartHappy'"></h4>
+          <img class="img-fluid mb-5 d-block mx-auto" src="{%static 'img/likelion.png'%}" alt="">
+            
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-uppercase mb-4"style="font-family: 'LotteMartHappy'">About Us</h4>
+          <p class="lead mb-0" style="font-family: 'LotteMartHappy'">멋쟁이 사자처럼 7기<br><br>산업경영 공학과 노지영 <br> 기계공학과 차시은 <br> 기계공학과 권민정
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Your Website 2019</small>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{%static 'vendor/jquery/jquery.min.js'%}?v=1.0"></script>
+  <script src="{%static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}?v=1.0"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{%static 'vendor/jquery-easing/jquery.easing.min.js'%}?v=1.0"></script>
+  <script src="{%static 'vendor/magnific-popup/jquery.magnific-popup.min.js'%}?v=1.0"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="{%static 'js/jqBootstrapValidation.js'%}?v=1.0"></script>
+  <script src="{%static 'js/contact_me.js'%}?v=1.0"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{%static 'js/freelancer.min.js'%}?v=1.0"></script>
+
+</body>
+
+</html>

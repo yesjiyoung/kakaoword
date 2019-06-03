@@ -1,0 +1,63 @@
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff'); } @font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff'); } .lottemarthappy * { font-family: 'LotteMartHappy', sans-serif; }
+
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+#mainNav {
+    background-color: rgb(252, 162, 79)!important;
+}
+
+#masthead{
+    background-color: #FFBE04!important;
+}
+
+hr.star-light:after{
+    background-color: #FFBE04!important;
+}
+
+#button{
+    background-color: #FFBE04!important;
+}
+
+.bg-primary{
+    background-color: #ffc107!important; 
+
+}
+#mainNav .navbar-brand {
+    color: #6b5408;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+       flex: none!important;
+       max-width: 100%!important;
+    }
+}
+
+.text-white { color: #6b5408 !important; }
+
+.text_form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'LotteMartHappy';
+}
+
+#result_board {
+    background-color: #FFBE04;
+}
+
+.lead {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'LotteMartHappy';
+}
